@@ -1,0 +1,30 @@
+### Correct Login
+POST http://127.0.0.1:5000/auth HTTP/1.1
+content-type: application/json
+
+{
+    "username": "a",
+    "password": "a"
+}
+
+### Wrong Login
+POST http://127.0.0.1:5000/auth HTTP/1.1
+content-type: application/json
+
+{
+    "username": "23",
+    "password": "sdafasd"
+}
+
+### Register User
+POST http://127.0.0.1:5000/user HTTP/1.1
+content-type: application/json
+
+{
+    "username": "asdfa",
+    "password": "asdfa",
+    "email": "a@gmail.com"
+}
+
+### Get User
+GET http://127.0.0.1:5000/users HTTP/1.1
