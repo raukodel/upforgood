@@ -35,7 +35,7 @@ def identity(payload):
 @auth.route('/user', methods=['POST'])
 def createUser():
     returnObj = Object()
-    returnObj.message = "User created"
+    returnObj.message = "User created."
 
     try :
         userInfo = json.loads(request.data)
@@ -62,13 +62,17 @@ def createUser():
 
     return returnResponse(200, returnObj)
 
-@auth.route('/user', methods=['GET'])
+@auth.route('/users', methods=['GET'])
 def GetUsers():
+    returnObj = Object()
+    returnObj.message = "All users."
+
     users = User.query.all()
 
     schema = UserSchema(many=True)
-    result = schema.dumps(users)
-    return returnResponse(200, result)
+    print(schema.dumps(users))
+    returnObj.data = schema.dumps(users)
+    return returnResponse(200, returnObj)
 
 @auth.route('/auth/<string:username>', methods=['GET'])
 def getExample(username):
