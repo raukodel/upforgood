@@ -1,4 +1,4 @@
-### Correct Login
+### Login
 POST http://127.0.0.1:5000/auth HTTP/1.1
 content-type: application/json
 
@@ -7,24 +7,18 @@ content-type: application/json
     "password": "a"
 }
 
-### Wrong Login
-POST http://127.0.0.1:5000/auth HTTP/1.1
-content-type: application/json
-
-{
-    "username": "23",
-    "password": "sdafasd"
-}
-
 ### Register User
 POST http://127.0.0.1:5000/user HTTP/1.1
 content-type: application/json
 
 {
-    "username": "asdfa",
-    "password": "asdfa",
-    "email": "a@gmail.com"
+    "username": "2112",
+    "password": "1212",
+    "email": "aasa@gmasdail.com"
 }
 
-### Get User
+### Get Specific Users
+GET http://127.0.0.1:5000/user/8 HTTP/1.1
+
+### Get All Users
 GET http://127.0.0.1:5000/users HTTP/1.1

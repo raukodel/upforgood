@@ -21,6 +21,9 @@ class User(db.Model):
     def __repr__(self):
         return '<User %r>' % self.username
 
+    def reprJSON(self):
+        return dict(username=self.username, password=self.password, email=self.email)
+
     @validates('username')
     def validate_username(self, key, username):
         assert len(username) > self.__usernameLength, "Username needs to have more then %d letters" % (self.__usernameLength)
