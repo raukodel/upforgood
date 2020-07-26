@@ -4,7 +4,7 @@ This project use Flask for backend and React for frontend. <br />
 # Python 3
 Enviroment
 ```
-$ pip install virtualenv
+$ pip3 install virtualenv
 $ virtualenv name_of_env
 $ source env/bin/activate
 ```
