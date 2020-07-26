@@ -6,7 +6,7 @@ Enviroment
 ```
 $ pip install virtualenv
 $ virtualenv name_of_env
-$ source venv/bin/activate
+$ source env/bin/activate
 ```
 
 Install dependencies
