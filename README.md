@@ -11,12 +11,7 @@ $ source env/bin/activate
 
 Install dependencies
 ```
-$ pip install Flask
-$ pip install -U Flask-SQLAlchemy
-$ pip install Flask-Cors
-$ pip install flask-marshmallow
-$ pip install simplejson
-$ pip install Flask-JWT
+$ pip3 intall -r requirements.txt
 ```
 Run Linux
 ```
