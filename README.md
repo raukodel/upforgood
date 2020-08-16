@@ -7,6 +7,7 @@ Enviroment
 $ pip3 install virtualenv
 $ virtualenv name_of_env
 $ source env/bin/activate
+$ deactivate
 ```
 
 Install dependencies
